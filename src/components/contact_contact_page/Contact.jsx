@@ -1,4 +1,9 @@
 import React from 'react'
+import twitter from './imgs/Twitter.png'
+import Twitter from './imgs/Twitter.png'
+import discord from './imgs/Discord.png'
+import email from './imgs/Email.png'
+
 
 const Contact = () => {
     return (
@@ -24,7 +29,7 @@ const Contact = () => {
                     {/* 1 */}
                     <div className=" p-4 border border-[#ABB2BF]">
                         <h2 className=' text-white font-medium pb-2'>Support me here</h2>
-                        <span className='text-[#ABB2BF]'>4149500120690030</span>
+                        <span className='text-[#ABB2BF]'>+254-705-223-948</span>
                     </div>
                     {/* 2 */}
                     <div className=" p-4 border border-[#ABB2BF]">
@@ -33,16 +38,16 @@ const Contact = () => {
                             {/* contacts */}
                             <div className=" flex gap-1 items-center">
                                 {/* img */}
-                                <img src={"./imgs/Discord.png"} alt="" />
+                                <img src={discord} alt="" />
                                 {/* text */}
-                                <span>Elias#1234</span>
+                                <span>Emmanuel#1234</span>
                             </div>
                             {/* contacts */}
                             <div className=" flex gap-1 items-center">
                                 {/* img */}
-                                <img src={"./imgs/Email.png"} alt="" />
+                                <img src={email} alt="" />
                                 {/* text */}
-                                <span>elias@elias.me</span>
+                                <span>emichoti2660@gmail.com</span>
                             </div>
                         </div>
                     </div>
@@ -57,14 +62,14 @@ const Contact = () => {
                 <div className=" flex gap-6">
                     <a href="#">
                         <div className=" text-[#ABB2BF] flex items-center gap-1">
-                            <img src={'./imgs/Twitter.png'} alt="" />
-                            <span>@elias</span>
+                            <img src={Twitter} alt="" />
+                            <span>@emmanuel</span>
                         </div>
                     </a>
                     <a href="#">
                         <div className=" text-[#ABB2BF] flex items-center gap-1">
-                            <img src={'./imgs/Twitter.png'} alt="" />
-                            <span>@elias</span>
+                            <img src={twitter} alt="" />
+                            <span>@emmanuel</span>
                         </div>
                     </a>
                 </div>

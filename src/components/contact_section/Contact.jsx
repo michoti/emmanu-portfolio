@@ -1,3 +1,6 @@
+import email from "./imgs/Email.png"
+import discord from "./imgs/Discord.png"
+
 const Contact = () => {
   return (
     <>
@@ -34,12 +37,12 @@ const Contact = () => {
               <div className="">
                 {/* links */}
                 <div className="flex gap-1 items-center">
-                  <img src={"./imgs/Discord.png"} alt="" />
-                  <span className="text-[#ABB2BF]">!Elias#3519</span>
+                  <img src={discord} alt="" />
+                  <span className="text-[#ABB2BF]">Emmanuel#1234</span>
                 </div>
                 <div className="flex gap-1 items-center">
-                  <img src={"./imgs/Email.png"} alt="" />
-                  <span className="text-[#ABB2BF]">elias@elias.me</span>
+                  <img src={email} alt="" />
+                  <span className="text-[#ABB2BF]">emichoti2660@gmail.com</span>
                 </div>
               </div>
             </div>

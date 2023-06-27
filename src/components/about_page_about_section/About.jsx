@@ -1,4 +1,5 @@
 import React from 'react'
+import man from "./imgs/man.png"
 
 const About = () => {
     return (
@@ -20,23 +21,23 @@ const About = () => {
                 <div className="md:w-[48%] w-full">
                     {/* disc */}
                     <p className="text-[#ABB2BF] ">
-                        Hello, i’m Elias!
+                        Hello, i’m Emmanuel Michoti!
                         <br />
                         <br />
-                        I’m a self-taught front-end developer based in Kyiv, Ukraine. I
+                        I’m a self-taught front-end developer based in Nairobi, Kenya. I
                         can develop responsive websites from scratch and raise them into
                         modern user-friendly web experiences.
                         <br />
                         <br />
                         Transforming my creativity and knowledge into a websites has been
-                        my passion for over a year. I have been helping various clients to
+                        my passion. I have been helping various clients to
                         establish their presence online. I always strive to learn about
                         the newest technologies and frameworks.
                     </p>
                 </div>
                 {/* right */}
                 <div className=" mx-auto">
-                    <img className="mx-auto" src={"./imgs/man.png"} alt="" />
+                    <img className="mx-auto" src={man} alt="" />
                 </div>
             </div>
         </div>

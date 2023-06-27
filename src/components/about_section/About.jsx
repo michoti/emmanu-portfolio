@@ -1,3 +1,5 @@
+import man from "./imgs/man.png"
+
 const AboutSec = () => {
   return (
     <>
@@ -17,16 +19,16 @@ const AboutSec = () => {
             </div>
             {/* disc */}
             <p className="text-[#ABB2BF] ">
-              Hello, i’m Elias!
+              Hello, i’m Emmanuel!
               <br />
               <br />
-              I’m a self-taught front-end developer based in Kyiv, Ukraine. I
+              I’m a self-taught front-end developer based in Nairobi, Kenya. I
               can develop responsive websites from scratch and raise them into
               modern user-friendly web experiences.
               <br />
               <br />
               Transforming my creativity and knowledge into a websites has been
-              my passion for over a year. I have been helping various clients to
+              my passion. I have been helping various clients to
               establish their presence online. I always strive to learn about
               the newest technologies and frameworks.
             </p>
@@ -42,7 +44,7 @@ const AboutSec = () => {
           </div>
           {/* right */}
           <div  data-aos = "fade-left" className=" mx-auto">
-            <img className="mx-auto" src={"./imgs/man.png"} alt="" />
+            <img className="mx-auto" src={man} alt="" />
           </div>
         </div>
       </div>

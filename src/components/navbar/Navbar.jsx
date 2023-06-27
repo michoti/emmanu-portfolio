@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Aos from "aos";
+import Close from './imgs/close.png'
 import 'aos/dist/aos.css'
 
 const Navbar = () => {
@@ -17,7 +18,7 @@ const Navbar = () => {
             <div className="img">
               <img src={"imgs/Logo.png"} alt="" />
             </div>
-            Elias
+            Emmanuel
           </div>
           <div className="right flex items-center">
             <div
@@ -50,7 +51,7 @@ const Navbar = () => {
                 onClick={() => setToggle(false)}
                 className="close absolute block md:hidden right-3 top-3"
               >
-                <img src={"./imgs/close.png"} alt="" />
+                <img src={Close} alt="" />
               </div>
             </div>
             {/* CLOSE&OPEN btns */}
