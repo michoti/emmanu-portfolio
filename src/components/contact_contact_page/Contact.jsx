@@ -1,8 +1,8 @@
 import React from 'react'
-import twitter from './imgs/Twitter.png'
-import Twitter from './imgs/Twitter.png'
-import discord from './imgs/Discord.png'
-import email from './imgs/Email.png'
+import { PhoneIcon } from '@heroicons/react/24/solid'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faDiscord, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 
 const Contact = () => {
@@ -29,7 +29,7 @@ const Contact = () => {
                     {/* 1 */}
                     <div className=" p-4 border border-[#ABB2BF]">
                         <h2 className=' text-white font-medium pb-2'>Support me here</h2>
-                        <span className='text-[#ABB2BF]'>+254-705-223-948</span>
+                        <span className='flex gap-1 items-center text-[#ABB2BF]'><PhoneIcon className='h-6 w-6' />+254-705-223-948</span>
                     </div>
                     {/* 2 */}
                     <div className=" p-4 border border-[#ABB2BF]">
@@ -38,14 +38,14 @@ const Contact = () => {
                             {/* contacts */}
                             <div className=" flex gap-1 items-center">
                                 {/* img */}
-                                <img src={discord} alt="" />
+                                <FontAwesomeIcon icon={faDiscord} className='h-8 w-8' />
                                 {/* text */}
                                 <span>Emmanuel#1234</span>
                             </div>
                             {/* contacts */}
                             <div className=" flex gap-1 items-center">
                                 {/* img */}
-                                <img src={email} alt="" />
+                                <FontAwesomeIcon icon={faEnvelope} className='h-8 w-8' />
                                 {/* text */}
                                 <span>emichoti2660@gmail.com</span>
                             </div>
@@ -60,15 +60,15 @@ const Contact = () => {
                 <div className=" text-[32px] font-medium text-white"><span className='text-[#C778DD]'>#</span>all-media</div>
                 {/* media */}
                 <div className=" flex gap-6">
-                    <a href="#">
+                    <a href="https://twitter.com/Michoti1">
                         <div className=" text-[#ABB2BF] flex items-center gap-1">
-                            <img src={Twitter} alt="" />
-                            <span>@emmanuel</span>
+                                <FontAwesomeIcon icon={faTwitter} className='h-8 w-8' />
+                                <span>@Michoti1</span>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/emmanuel-michoti-764427189/">
                         <div className=" text-[#ABB2BF] flex items-center gap-1">
-                            <img src={twitter} alt="" />
+                            <FontAwesomeIcon icon={faLinkedin} className='h-8 w-8' />
                             <span>@emmanuel</span>
                         </div>
                     </a>
