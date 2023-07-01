@@ -16,11 +16,11 @@ const Footer = () => {
                 <span>Elias</span>
               </div>
               {/* email */}
-              <span className="text-[#ABB2BF]">elias@elias.ml</span>
+              <span className="text-[#ABB2BF]">emichoti2660@gmail.com</span>
             </div>
             {/* disc */}
             <div className="text-[#ffffff]">
-              <p>Web designer and front-end developer based in Ukraine</p>
+              <p>Fullstack developer based in Nairobi, Kenya</p>
             </div>
           </div>
           {/* right */}
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         {/* bottom */}
         <div className="text-center text-[#ABB2BF] pb-8 mt-12">
-          © Copyright 2022. Made by Elias
+          © Copyright 2022. Made by Emmanuel
         </div>
       </div>
     </>
