@@ -13,7 +13,7 @@ const Footer = () => {
               {/* logo */}
               <div className=" flex gap-2 items-center text-2xl text-white font-bold">
                 <img src={"./imgs/Logo.png"} alt="" />
-                <span>Elias</span>
+                <span>Emmanuel Michoti</span>
               </div>
               {/* email */}
               <span className="text-[#ABB2BF]">emichoti2660@gmail.com</span>
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         {/* bottom */}
         <div className="text-center text-[#ABB2BF] pb-8 mt-12">
-          © Copyright 2022. Made by Emmanuel
+          © Copyright 2022. Made by Michoti
         </div>
       </div>
     </>

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Aos from "aos";
 import Close from './imgs/close.png'
+import brandlogo from "./imgs/Logo.png"
 import 'aos/dist/aos.css'
 
 const Navbar = () => {
@@ -16,7 +17,7 @@ const Navbar = () => {
           <div className="left flex gap-2 items-center font-bold text-white text-base">
             {/* logo */}
             <div className="img">
-              <img src={"imgs/Logo.png"} alt="" />
+              <img src={brandlogo} alt="" />
             </div>
             Emmanuel
           </div>

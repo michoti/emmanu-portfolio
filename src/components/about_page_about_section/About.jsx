@@ -24,15 +24,10 @@ const About = () => {
                         Hello, i’m Emmanuel Michoti!
                         <br />
                         <br />
-                        I’m a self-taught front-end developer based in Nairobi, Kenya. I
-                        can develop responsive websites from scratch and raise them into
-                        modern user-friendly web experiences.
+                        I am a full-stack developer located in Nairobi, Kenya. My expertise lies in creating responsive websites from the ground up and transforming them into contemporary, user-friendly web experiences.
                         <br />
                         <br />
-                        Transforming my creativity and knowledge into a websites has been
-                        my passion. I have been helping various clients to
-                        establish their presence online. I always strive to learn about
-                        the newest technologies and frameworks.
+                        Channeling my creativity and knowledge into website development has been my passion. I have been assisting numerous clients in establishing their online presence. I am constantly eager to learn about the latest technologies and frameworks to enhance my skills further.
                     </p>
                 </div>
                 {/* right */}
