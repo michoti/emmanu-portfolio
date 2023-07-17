@@ -1,7 +1,7 @@
 import Project_card from "../project_card/Project_card";
 import first from "./imgs/laravel-ecomm-api-img.jpg";
 import second from "./imgs/react-material-dashboard.jpg";
-import third from "./imgs/Rectangle 22 (1).png";
+import third from "./imgs/gym-page.png";
 import { NavLink } from "react-router-dom";
 
 const Projects = () => {
@@ -23,10 +23,10 @@ const Projects = () => {
     },
     {
       img: third,
-      langs: ["html", "css", "javascript", "Node.js", "python"],
-      title: "Kahoot Answers Viewer",
-      disc: "Get answers to your kahoot quiz ",
-      link: "#",
+      langs: ["React", "TypeScript", "Tailwind"],
+      title: "Gym Application",
+      disc: "This gym web application, created with React, TypeScript, and Tailwind CSS, showcases an enticing design, providing visitors with a captivating introduction to the gym's services, features, and motivating visuals, encouraging them to join.",
+      link: "https://gym-app-em.vercel.app/",
     },
   ];
 

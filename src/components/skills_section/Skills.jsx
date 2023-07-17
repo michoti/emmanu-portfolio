@@ -2,35 +2,29 @@ const Skills = () => {
   const skills = [
     {
       title: "Languages",
-      languages: ["TypeScript", "Lua", "Python", "JavaScript"],
+      languages: ["PHP,", "JavaScript,", "SQL,", "TypeScript"],
     },
-    { title: "Databases", languages: ["SQLite", "PostgreSQL", "Mongo"] },
+    { title: "Databases", languages: ["MySQL,", "PostgreSQL,", "Mongo"] },
     {
       title: "Tools",
       languages: [
-        "VSCode",
-        "Neovim",
-        "Linux",
-        "Figma",
-        "XFCE",
-        "Arch",
-        "Git",
-        "Font Awesome",
+        "Bash/Shell-commands,",
+        "Figma,",
+        "Git,",
+        "Github-Actions"
       ],
     },
     {
       title: "Other",
-      languages: ["HTML", "CSS", "EJS", "SCSS", "REST", "Jinja"],
+      languages: ["Docker,","SCSS,", "REST API,", "CI/CD"],
     },
     {
       title: "Frameworks",
       languages: [
-        "React",
-        "Vue",
-        "Disnake",
-        "Discord.js",
-        "Flask",
-        "Express.js",
+        "Laravel,",
+        "React,",
+        "NextJs,",
+        "TailwindCss",
       ],
     },
   ];
