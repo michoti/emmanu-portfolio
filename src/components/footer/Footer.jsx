@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         {/* bottom */}
         <div className="text-center text-[#ABB2BF] pb-8 mt-12">
-          © Copyright 2022. Made by Michoti
+          © Copyright 2024. Made by Michoti
         </div>
       </div>
     </>
