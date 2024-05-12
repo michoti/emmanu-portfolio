@@ -1,53 +1,34 @@
 import React from 'react'
 // imgs
-import first from "./imgs/Rectangle 22.jpg";
-import second from "./imgs/Rectangle 22.png";
-import third from "./imgs/Rectangle 22 (1).png";
-import forth from "./imgs/Rectangle 22 (11).png";
-import fifth from "./imgs/Rectangle 22.png";
+import first from "./imgs/laravel-ecomm-api-img.jpg";
+import second from "./imgs/react-material-dashboard.jpg";
+import third from "./imgs/gym-page.png";
 import Project_card from '../project_card/Project_card';
 
 const Complete_apps = () => {
-    const projects = [
-        // 6 projects date
-        {
-            // get img from img folder
-            img: first,
-            langs: ["html", "css", "javascript", "react", "tailwind css"],
-            title: "ChertNodes",
-            disc: "Minecraft servers hosting ",
-        },
-        {
-            img: second,
-            langs: ["html", "css", "javascript", "Node.js"],
-            title: "ProtectX",
-            disc: "Discord anti-crash bot ",
-        },
-        {
-            img: third,
-            langs: ["html", "css", "javascript", "Node.js", "python"],
-            title: "Kahoot Answers Viewer",
-            disc: "Get answers to your kahoot quiz ",
-        },
-        {
-            img: forth,
-            langs: ["html", "css", "javascript"],
-            title: "Kotik Bot",
-            disc: "Discord anti-crash bot ",
-        },
-        {
-            img: fifth,
-            langs: ["html", "TS", "Vue", "Node.js", "Less"],
-            title: "Portfolio",
-            disc: "You’re using it rn ",
-        },
-        {
-            img: forth,
-            langs: ["html", "css", "javascript"],
-            title: "Kotik Bot",
-            disc: "Discord anti-crash bot ",
-        },
-    ];
+  const projects = [
+    {
+      img: first,
+      langs: ["Laravel", "pusher", "MySQL", "Filament", "Tailwindcss"],
+      title: "Ecommerce API",
+      disc: "The API leverages Laravel Scout for search, Pusher for websockets, and Filament for an admin panel, enabling seamless integration, real-time communication, and user-friendly management. ",
+      link: "https://github.com/michoti/ecommerceapi",
+    },
+    {
+      img: second,
+      langs: ["React", "MUI", "Tailwindcss", "Node.js"],
+      title: "Admin Dashboard",
+      disc: "This dashboard is developed using ReactJS, MUI design, and Tailwind CSS, featuring a dynamic theme-changing functionality for a personalized user experience. ",
+      link: "https://m-ui-dashboard.vercel.app/",
+    },
+    {
+      img: third,
+      langs: ["React", "TypeScript", "Tailwind"],
+      title: "Gym Application",
+      disc: "This gym web application, created with React, TypeScript, and Tailwind CSS, showcases an enticing design, providing visitors with a captivating introduction to the gym's services, features, and motivating visuals, encouraging them to join.",
+      link: "https://gym-app-em.vercel.app/",
+    },
+  ];
     return (
         <div>
             <div className=" pt-[114px] px-5 max-w-[1560px] mx-auto">
@@ -79,6 +60,7 @@ const Complete_apps = () => {
                                         langs={langs}
                                         title={title}
                                         disc={disc}
+                                        link={link}
                                     />
                                 </>
                             );

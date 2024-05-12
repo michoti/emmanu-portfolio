@@ -7,43 +7,21 @@ const Small_projects = () => {
     let projects = [
         {
             languages: ["VUE", "CSS", "HTML"],
-            title: "Bot boilerplate",
-            body: 'Start creating scalable discord.js bot with typescript in seconds'
-        },
-        {
-            languages: ["VUE", "JS", "HTML"],
-            title: "My blog",
-            body: 'Front-end of my future blog website written in vue'
-        },
-        {
-            languages: ["VUE", "Figma", "HTML"],
-            title: "Chess pro",
-            body: 'Figma landing page about service for viewing chess tournaments'
-        },
-        {
-            languages: ["React", "CSS", "HTML"],
-            title: "My blog",
-            body: 'Front-end of my future blog website written in vue'
+            title: "Flight Booking App",
+            body: 'Start creating scalable discord.js bot with typescript in seconds',
+            link: 'www.github.com'
         },
         {
             languages: ["VUE", "CSS", "HTML"],
-            title: "My blog",
-            body: 'Front-end of my future blog website written in vue'
+            title: "Realtime Chat App",
+            body: 'Start creating scalable discord.js bot with typescript in seconds',
+            link: 'www.github.com'
         },
         {
             languages: ["VUE", "CSS", "HTML"],
-            title: "My blog",
-            body: 'Front-end of my future blog website written in vue'
-        },
-        {
-            languages: ["VUE", "CSS", "HTML"],
-            title: "My blog",
-            body: 'Front-end of my future blog website written in vue'
-        },
-        {
-            languages: ["VUE", "CSS", "HTML"],
-            title: "My blog",
-            body: 'Front-end of my future blog website written in vue'
+            title: "Events Booking App",
+            body: 'Start creating scalable discord.js bot with typescript in seconds',
+            link: 'www.github.com'
         },
     ]
     // you will write dates by yourselves
@@ -61,7 +39,7 @@ const Small_projects = () => {
                 {
                     // mapping
                     projects.map(e => {
-                        let { languages, title, body } = e
+                        let { languages, title, body, link } = e
                         return <>
                             {/* card */}
                             <div className="card max-w-[331px] w-full border border-[#ABB2BF]">
@@ -77,7 +55,7 @@ const Small_projects = () => {
                                     <p className=' text-[#ABB2BF] py-4'>{body}</p>
                                     {/* we are only coders so maybe no one have figma projects */}
                                     <button className=' border border-[#C778DD] px-4 py-2 text-white duration-150 hover:bg-[#C778DD33]'>
-                                        <a href="www.github.com">Github {'<'}~{'>'}</a>
+                                        <a href={link}>Github {'<'}~{'>'}</a>
                                     </button>
                                 </div>
                             </div></>
