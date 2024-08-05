@@ -1,41 +1,41 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import { useEffect, useState } from "react"
-import Testimonial from "./Testimonial";
+// import { useEffect, useState } from "react"
+// import Testimonial from "./Testimonial";
 import Service from "./Service";
 
 const servicesData = [
   {
     icon: "/images/icon-design.svg",
-    title: "Web design",
-    description: "The most modern and high-quality design made at a professional level."
+    title: "Software developer",
+    description: "Design, code, test, and maintain software applications or systems to solve problems and meet user needs, ensuring functionality, performance, and reliability throughout the development lifecycle."
   },
   {
     icon: "/images/icon-dev.svg",
-    title: "Web development",
-    description: "High-quality development of sites at the professional level."
+    title: "Devops engineer",
+    description: "I integrate development and operations, automating processes to enhance deployment, scalability, and system reliability for continuous delivery."
   },
   {
-    icon: "/images/icon-app.svg",
-    title: "Mobile apps",
-    description: "Professional development of applications for iOS and Android."
+    icon: "/images/icon-sys.svg",
+    title: "Systems architect",
+    description: "Designing and structuring complex systems, ensuring they meet technical requirements, scalability, and integration within the organization."
   },
   {
-    icon: "/images/icon-photo.svg",
-    title: "Photography",
-    description: "I make high-quality photos of any category at a professional level."
+    icon: "/images/icon-qa.svg",
+    title: "Quality Assurance engineer",
+    description: "Test software to identify defects, ensure quality, and verify that applications meet specified requirements and standards."
   }
 ];
 
 
 const About = () => {
-  const [testimonials , setTestimonials ] = useState([]);
-  useEffect(()=> {
-    fetch('testimonials.json').then(res => res.json()).then(data => {
-      console.log(data)
-      setTestimonials(data)
-    });
-  }, [])
+  // const [testimonials , setTestimonials ] = useState([]);
+  // useEffect(()=> {
+  //   fetch('testimonials.json').then(res => res.json()).then(data => {
+  //     console.log(data)
+  //     setTestimonials(data)
+  //   });
+  // }, [])
   return (
     <article className="about  active" data-page="about">
 
@@ -45,17 +45,17 @@ const About = () => {
 
     <section className="about-text">
       <p>
-        I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-        I enjoy
-        turning complex problems into simple, beautiful and intuitive designs.
+          I am a dedicated and innovative fullstack developer with a passion for crafting responsive web applications. With experience
+         at Startappzke Ltd, I have developed robust travel insurance platforms using Laravel, enhancing services for domestic clients.
       </p>
 
-      <p>
-        My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-        Moreover, I
-        add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-        across your
-        message and identity in the most creative way. I created web design for many famous brand companies.
+      <p>     
+          I specialize in eCommerce and business platforms with Laravel and React, managing CI/CD pipelines 
+          and project tasks efficiently. My expertise extends to state management, GraphQL, and collaborative Agile methodologies,
+          honed through various roles, including at Clifford Technologies and Grafame Tech. I am adept at using tools like Git, Docker,
+          and AWS to create optimized solutions tailored to client needs. Committed to continuous learning and teamwork, I strive to 
+          bring innovative ideas to life, ensuring user-friendly and efficient web applications. Explore my work and connect with me 
+          to discuss how I can contribute to your projects.
       </p>
     </section>
 
@@ -88,7 +88,7 @@ const About = () => {
       - testimonials
     --> */}
 
-    <section className="testimonials">
+    {/* <section className="testimonials">
 
       <h3 className="h3 testimonials-title">Testimonials</h3>
 
@@ -105,14 +105,14 @@ const About = () => {
 
       </ul>
 
-    </section>
+    </section> */}
 
 
     {/* <!--
       - clients
     --> */}
 
-    <section className="clients">
+    {/* <section className="clients">
 
       <h3 className="h3 clients-title">Clients</h3>
 
@@ -156,7 +156,7 @@ const About = () => {
 
       </ul>
 
-    </section>
+    </section> */}
 
   </article>
   )

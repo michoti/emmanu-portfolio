@@ -1,7 +1,7 @@
 import { BsGithub } from "react-icons/bs";
 import { FaDownload, FaLinkedin } from "react-icons/fa";
 import { FaLocationDot, FaSquareXTwitter } from "react-icons/fa6";
-import { GiCalendar, GiClawSlashes, GiMailbox, GiMayanPyramid, GiPhone } from "react-icons/gi";
+import { GiClawSlashes, GiMailbox, GiPhone } from "react-icons/gi";
 
 const Aside = () => {
   const handleDownloadCV = () => {
@@ -28,12 +28,12 @@ const Aside = () => {
               Emmanuel Michoti
             </h1>
 
-            <p className="title">Web developer</p>
+            <p className="title">Software developer</p>
             <div className="links">
-              <a className="link">
+              <a href="https://www.linkedin.com/in/emmanuel-michoti-764427189/" className="link">
                 <FaLinkedin/>                
               </a>
-              <a className="link">
+              <a href="https://github.com/michoti" className="link">
                 <BsGithub/>                
               </a>
               <a className="link">
