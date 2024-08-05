@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-
 import "./App.css";
 
 
@@ -15,7 +13,9 @@ function App() {
        <Navbar/>
         <section style={{
           scrollBehavior: "smooth"
-        }}><Outlet/></section>
+        }}>
+          <Outlet/>
+        </section>
       </div>
     </>
   );
