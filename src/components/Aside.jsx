@@ -6,7 +6,7 @@ const Aside = () => {
         <div className="sidebar-info">
           <figure className="avatar-box">
             <img
-              src={"/images/mamun.jpg"}
+              src={"/images/avatar-1.png"}
               alt="Richard hanrick"
               width="80"
             />
@@ -14,7 +14,7 @@ const Aside = () => {
 
           <div className="info-content">
             <h1 className="name" title="Richard hanrick">
-              Md AL Mamun
+              Emmanuel Michoti
             </h1>
 
             <p className="title">Web developer</p>
@@ -41,7 +41,7 @@ const Aside = () => {
                 <p className="contact-title">Email</p>
 
                 <a href="mailto:richard@example.com" className="contact-link">
-                  richard@example.com
+                  emichoti2660@gmail.com
                 </a>
               </div>
             </li>
@@ -54,13 +54,13 @@ const Aside = () => {
               <div className="contact-info">
                 <p className="contact-title">Phone</p>
 
-                <a href="tel:+12133522795" className="contact-link">
-                  +1 (213) 352-2795
+                <a href="tel:+254705223948" className="contact-link">
+                  +(254) 705223948
                 </a>
               </div>
             </li>
 
-            <li className="contact-item">
+            {/* <li className="contact-item">
               <div className="icon-box">
                 <GiCalendar/>
                
@@ -71,7 +71,7 @@ const Aside = () => {
 
                 <time dateTime="1982-06-23">June 23, 1982</time>
               </div>
-            </li>
+            </li> */}
 
             <li className="contact-item">
               <div className="icon-box">
@@ -82,7 +82,7 @@ const Aside = () => {
               <div className="contact-info">
                 <p className="contact-title">Location</p>
 
-                <address>Sacramento, California, USA</address>
+                <address>Nairobi, Kenya</address>
               </div>
             </li>
           </ul>
