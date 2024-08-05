@@ -1,6 +1,17 @@
+import { BsGithub } from "react-icons/bs";
+import { FaDownload, FaLinkedin } from "react-icons/fa";
+import { FaLocationDot, FaSquareXTwitter } from "react-icons/fa6";
 import { GiCalendar, GiClawSlashes, GiMailbox, GiMayanPyramid, GiPhone } from "react-icons/gi";
 
 const Aside = () => {
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/src/CV.pdf';
+    link.download = 'emmanuel-michoti-cv.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
   return (
     <aside className="sidebar">
         <div className="sidebar-info">
@@ -18,6 +29,17 @@ const Aside = () => {
             </h1>
 
             <p className="title">Web developer</p>
+            <div className="links">
+              <a className="link">
+                <FaLinkedin/>                
+              </a>
+              <a className="link">
+                <BsGithub/>                
+              </a>
+              <a className="link">
+                <FaSquareXTwitter/>                
+              </a>
+            </div>
           </div>
 
           <button className="info_more-btn" data-sidebar-btn>
@@ -75,7 +97,7 @@ const Aside = () => {
 
             <li className="contact-item">
               <div className="icon-box">
-                <GiMayanPyramid/>
+                <FaLocationDot/>
                 <ion-icon name="location-outline"></ion-icon>
               </div>
 
@@ -108,6 +130,12 @@ const Aside = () => {
               </a>
             </li>
           </ul>
+        </div>
+        <div className="download-cv">
+          <button 
+           onClick={handleDownloadCV}
+          className="btn"
+          ><span><FaDownload/></span> Download cv</button>
         </div>
       </aside>
   )
