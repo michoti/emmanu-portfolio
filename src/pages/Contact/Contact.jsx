@@ -1,6 +1,55 @@
+import { useState } from "react";
 
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    fullname: '',
+    email: '',
+    message: '',
+  });
+
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  
+  const validate = () => {
+    const errors = {};
+
+    if (!formData.fullname) {
+      errors.fullname = 'FullName is required';
+    }
+    if (!formData.email) {
+      errors.email = 'Email is required';
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      errors.email = 'Email address is invalid';
+    }
+    if (!formData.message) {
+      errors.message = 'Message is required';
+    } else if (formData.message.length < 3) {
+      errors.message = 'Message must be at least one word';
+    }
+
+    return errors;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const errors = validate();
+    setFormErrors(errors);
+    if (Object.keys(errors).length === 0) {
+      setIsSubmitted(true);
+      // Perform form submission (e.g., send data to server)
+    } else {
+      setIsSubmitted(false);
+    }
+  }
+
+  
   return (
     <section className="contact" data-page="contact">
 
@@ -8,29 +57,44 @@ const Contact = () => {
         <h2 className="h2 article-title">Contact</h2>
       </header>
 
-      <section className="mapbox" data-mapbox>
-        <figure>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-            width="400" height="300" loading="lazy" title="Google Map"></iframe>
-        </figure>
-      </section>
-
       <section className="contact-form">
 
         <h3 className="h3 form-title">Contact Form</h3>
 
-        <form action="#" className="form" data-form>
+        <form className="form" onSubmit={handleSubmit}>
 
           <div className="input-wrapper">
-            <input type="text" name="fullname" className="form-input" placeholder="Full name" required data-form-input />
+            <input 
+              type="text" 
+              name="fullname"
+              value={formData.fullname}
+              onChange={handleChange} 
+              className="form-input" 
+              placeholder="Full name" 
+              required 
+            />
 
-            <input type="email" name="email" className="form-input" placeholder="Email address" required data-form-input />
+            <input 
+               type="email" 
+               name="email"
+               value={formData.email}
+               onChange={handleChange} 
+               className="form-input" 
+               placeholder="Email address" 
+               required 
+              />
           </div>
 
-          <textarea name="message" className="form-input" placeholder="Your Message" required data-form-input></textarea>
+          <textarea 
+              name="message"
+              value={formData.message}
+              onChange={handleChange} 
+              className="form-input" 
+              placeholder="Your Message" 
+              required 
+            ></textarea>
 
-          <button className="form-btn" type="submit" data-form-btn>
+          <button className="form-btn" type="submit">
             <ion-icon name="paper-plane"></ion-icon>
             <span>Send Message</span>
           </button>
